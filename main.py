@@ -46,9 +46,15 @@ with open(output_file, 'w') as f:
 			print('--Error getting transcript.')
 			pass
 
+		count = count + 1
+		print(str(count) + ': ' + episode_title)
+
+
+
 		# Write title and transcript to output file
 		f.write('Title: ' + episode_title + '\n')
 		f.write('-----------------------\n')
 		f.write(episode_transcript + '\n\n')
 
+print('Done!')
 sys.exit(-1)
